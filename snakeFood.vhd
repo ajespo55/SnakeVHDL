@@ -47,7 +47,7 @@ BEGIN
 food_generation : PROCESS
 
 BEGIN
-	IF (snake_x >= food_x - 15 AND snake_x <= food_x + 15) AND (snake_y >= food_y - 15 AND snake_y <= food_y + 15) THEN
+	IF (head_x >= food_x - 15 AND head_x <= food_x + 15) AND (head_y >= food_y - 15 AND head_y <= food_y + 15) THEN
 		      IF (food_x = CONV_STD_LOGIC_VECTOR(50, 10) AND food_y = CONV_STD_LOGIC_VECTOR(50,10)) THEN
 		          food_x <= CONV_STD_LOGIC_VECTOR(100,10);
 		          food_y <= CONV_STD_LOGIC_VECTOR(250,10);
